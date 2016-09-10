@@ -1,1 +1,1 @@
-# 3D-wolrd-map
+# 3D-world-map
