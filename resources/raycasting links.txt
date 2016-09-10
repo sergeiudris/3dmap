@@ -1,0 +1,11 @@
+matrices
+http://nehe.gamedev.net/article/matrices/19004/
+
+intersections
+http://www.realtimerendering.com/intersections.html
+
+overall clear opengl tutorial
+http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/
+
+transform pipeline raycasting
+http://antongerdelan.net/opengl/raycasting.html

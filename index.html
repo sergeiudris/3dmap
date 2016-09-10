@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>earth</title>
+    <style>
+        #root {
+            /*box-sizing: border-box;*/
+            position: relative;
+            border: 2px solid cornflowerblue;
+            border-radius: 3px;
+            width: 90vw;
+            height: 90vh;
+            color: #eeeeee;
+        }
+        
+        kbd {
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+            color: #333;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+            margin: 0 0.1em;
+            padding: 0.1em 0.6em;
+            text-shadow: 0 1px 0 #fff;
+            white-space: nowrap
+        }
+        
+        kbd.keyboard,
+        kbd.menu {
+            border: 1px solid #efefef;
+            border-radius: 0px;
+            box-shadow: none;
+            color: #666
+        }
+        
+        kbd.menu kbd {
+            border: none;
+            border-radius: 0px;
+            box-shadow: none
+        }
+        /**/
+        
+        #info {
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            /*   margin: 10px;*/
+            top: 80%;
+            width: 100%;
+            height: 20%;
+            overflow-y: auto;
+        }
+        
+        #legend {
+            /*border: 1px solid cornflowerblue;*/
+            position: absolute;
+            /*   margin: 10px;*/
+            top: 2%;
+            left: 2%;
+            height: 20%;
+        }
+        
+        #chemistry {
+            border-radius: 3px;
+            margin-top: 10px;
+            width: 90vw;
+            height: 20vh;
+            border: 2px solid cornflowerblue;
+        }
+        
+        canvas {
+            border-radius: 3px;
+            position: absolute;
+            /*   margin: 10px;*/
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="root">
+        <canvas id="target"></canvas>
+        <div id="legend">
+            <kbd>w</kbd><kbd>a</kbd><kbd>s</kbd><kbd>d</kbd> - move camera
+            <br/>
+            <kbd>q</kbd><kbd>e</kbd><kbd>mousewheel</kbd> - zoom
+            <br/>
+            <kbd>f</kbd> - flat or sphere
+            <br/>
+            <kbd>doubleclick</kbd> - start/stop rendering
+        </div>
+        <div id="ui"></div>
+        <div id="info"></div>
+    </div>
+    <div id="chemistry">
+        <pre>
+    Chemistry:
+    ∴ geojson earth map → triangulated with earcut.js → vertices
+    ∴ pure WebGL 
+    ∴ custom tree to control components: sceneobject → container → mesh
+    ∴ <a href="https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm">Möller–Trumbore</a> intersection algorithm
+        </pre>
+    </div>
+    <div id="script" style="display:none;"></div>
+    <script type="text/javascript" src="./world.min.js"></script>
+    <script>
+        world();
+    </script>
+</body>
+
+
+
+</html>

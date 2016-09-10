@@ -1,0 +1,12 @@
+
+full Great Britain page
+https://en.wikipedia.org/w/api.php?
+action=query&titles=Great%20Britain&prop=revisions&rvprop=content&format=json&redirects
+
+infobox (first passage)
+https://en.wikipedia.org/w/api.php?
+action=query&prop=revisions&rvprop=content&format=json&titles=Great%20Britain&rvsection=0
+
+Getting Stack Overflow's intro in plain text:
+https://en.wikipedia.org/w/api.php?
+format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Stack%20Overflow
