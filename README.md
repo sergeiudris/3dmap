@@ -2,7 +2,7 @@
 
 Interactive 3d world map, `flat` or `sphere`.
 
-[**See live demo**]( https://mvstory.github.io/3d-world-map/)
+[**See live demo**]( https://sergeiudris.github.io/3d-world-map/)
 
 ![Alt text](/snapshot.png?raw=true "snapshot.png")
 
