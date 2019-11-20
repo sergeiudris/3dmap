@@ -26,7 +26,7 @@ ResourceManager.prototype = {
     load: function (urls) {
         return Promise.all(
             urls.map(function (url, i, a) {
-                return fetch(window.location.origin+"/"+url).then(
+                return fetch(url).then(
                     function (response) {
                         return new Promise(function (resolve, reject) {
                             if (/\.(eot|ttf|wav|mp3|ogv)$/.test(url)) {
