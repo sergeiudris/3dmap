@@ -25,7 +25,7 @@ function Entity(props) {
 
     this.BODY = new SceneObject({
         mesh: Cube,
-        textureUrl: "resources/wood.png",
+        textureUrl: "./resources/wood.png",
         programName: "position_uv",
         mode: "TRIANGLES"
     });

@@ -50,7 +50,7 @@ WorldScene.prototype.init = function (ioManager, domElement) {
     this.inputManager.init(domElement, this.camera);
 
     this.worldMap = new WorldMap({
-        countryFeatures: ioManager.getResource("resources/geoLOW-min.json").features
+        countryFeatures: ioManager.getResource("./resources/geoLOW-min.json").features
     });
 
     this.addChild(this.worldMap);

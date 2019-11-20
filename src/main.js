@@ -18,8 +18,8 @@ module.exports = {
                 "position_uv": require('./programs/position_uv.js')
             },
             resources: [
-                "resources/geoLOW-min.json",
-                "resources/wood.png"
+                "./resources/geoLOW-min.json",
+                "./resources/wood.png"
             ],
             initWorld: function () {
                 this.scenes = {
