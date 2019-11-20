@@ -11,7 +11,7 @@
             border: 2px solid cornflowerblue;
             border-radius: 3px;
             width: 90vw;
-            height: 90vh;
+            height: 86vh;
             color: #eeeeee;
         }
         
@@ -54,6 +54,9 @@
             width: 100%;
             height: 20%;
             overflow-y: auto;
+            /* background-color: #fff; */
+            /* color: #000; */
+
         }
         
         #legend {
@@ -69,7 +72,7 @@
             border-radius: 3px;
             margin-top: 10px;
             width: 90vw;
-            height: 20vh;
+            height: 10vh;
             border: 2px solid cornflowerblue;
         }
         
@@ -79,6 +82,12 @@
             /*   margin: 10px;*/
             width: 100%;
             height: 100%;
+        }
+
+        #btns {
+            position: absolute;
+            top: 16px;
+            right: 100px;
         }
     </style>
 
@@ -99,9 +108,13 @@
         <div id="ui"></div>
         <div id="info"></div>
     </div>
+    <div id="btns">
+        <input id="btn-map" type="button" value="map"></input>
+        <input id="btn-boxes" type="button" value="boxes"></input>
+    </div>
+
     <div id="chemistry">
         <pre>
-    Chemistry:
     ∴ geojson earth map → triangulated with earcut.js → vertices
     ∴ pure WebGL 
     ∴ custom tree to control components: sceneobject → container → mesh
@@ -110,9 +123,9 @@
         </pre>
     </div>
     <div id="script" style="display:none;"></div>
-    <script type="text/javascript" src="./world.min.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
     <script>
-        world();
+        worldmap3d.init();
     </script>
 </body>
 

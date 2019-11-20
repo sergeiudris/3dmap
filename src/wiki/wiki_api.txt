@@ -1,0 +1,24 @@
+http://stackoverflow.com/questions/28224312/mediawiki-api-how-do-i-list-all-pages-of-a-category-and-for-each-page-show-all
+
+You can use categorymembers as a generator. If you do that, you can then apply prop=categories:
+
+https://en.wikipedia.org/w/api.php?action=query&generator=categorymembers&gcmtitle=Category:Physics&prop=categories&cllimit=max&gcmlimit=max
+
+
+https://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmlimit=500&cmtitle=Category:1990s%20science%20fiction%20films&format=json
+
+
+
+full Great Britain page
+https://en.wikipedia.org/w/api.php?
+action=query&titles=Great%20Britain&prop=revisions&rvprop=content&format=json&redirects
+
+infobox (first passage)
+https://en.wikipedia.org/w/api.php?
+action=query&prop=revisions&rvprop=content&format=json&titles=Great%20Britain&rvsection=0
+
+Getting Stack Overflow's intro in plain text:
+https://en.wikipedia.org/w/api.php?
+format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Stack%20Overflow
+
+
