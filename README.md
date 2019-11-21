@@ -2,7 +2,7 @@
 
 Interactive 3d world map, `flat` or `sphere`.
 
-[* live demo**](https://seeris.github.io/3dmap/)
+[**live demo**](https://seeris.github.io/3dmap/)
 
 ![Alt text](/snapshot.png?raw=true "snapshot.png")
 
