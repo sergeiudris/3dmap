@@ -2,7 +2,7 @@
 
 - interactive 3d world map, `flat` or `sphere`.
 
-[**open**](https://seeris.github.io/playground.3dmap/)
+[**open**](https://sergeiudris.github.io/playground.3dmap/)
 
 ![Alt text](/snapshot.png?raw=true "snapshot.png")
 
