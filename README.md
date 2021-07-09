@@ -1,7 +1,5 @@
 ## 3dmap
 
-[archived]
-
 - interactive 3d world map, `flat` or `sphere`.
 
 [**open**](https://sergeiudris.github.io/playground.3dmap/)
