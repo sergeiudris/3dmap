@@ -7,7 +7,7 @@ Interactive 3d world map, `flat` or `sphere`.
 
 ![Alt text](/snapshot.png?raw=true "snapshot.png")
 
-## Features
+### Features
 
  * raw [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
  * country info fetching using [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page) and [JSONP](https://en.wikipedia.org/wiki/JSONP)
