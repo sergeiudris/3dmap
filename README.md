@@ -1,8 +1,9 @@
-## 3dmap
+## World map
 
-- interactive 3d world map, `flat` or `sphere`.
+Interactive 3d world map, `flat` or `sphere`.
 
-[**open**](https://sergeiudris.github.io/playground.3dmap/)
+
+[**open**](https://sergeiudris.github.io/3D-world-map/)
 
 ![Alt text](/snapshot.png?raw=true "snapshot.png")
 
